@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './Components/Home/Home';
 import NoMatch from './Components/NoMatch/NoMatch';
+import FriendDetail from './Components/FriendDetail/FriendDetail';
 import {
     BrowserRouter as Router,
     Switch,
@@ -15,6 +16,9 @@ function App() {
             <Switch>
                 <Route path="/home">
                     <Home />
+                </Route>
+                <Route path="/friend/:friendId">
+                    <FriendDetail />
                 </Route>
                 <Route exact path="/">
                     <Home />
